@@ -1,0 +1,70 @@
+/* pages/index/index.wxss */
+@import "../template/template.wxss";
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .swiper-box{
+    width: 720rpx;
+    height: 440rpx;
+    margin: 20rpx 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+  }
+  swiper{
+    width: 100%;
+    height: 100%;
+  
+  }
+  swiper image{
+    width:100%;
+    height: 100%;
+    
+  }
+  
+  .navbox{
+    width: 720rpx;
+    height: 200rpx;
+    margin: 10px auto; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  .navitem{
+    width: 230rpx;
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(221, 218, 218);
+    box-shadow: 2px 2px 2px 2px #ccc;
+  }
+  .navitem image{
+    width: 140rpx;
+    height: 140rpx;
+  }
+  .navitem text{
+    line-height: 60rpx;
+  }
+  .food-text{
+    width: 720rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #f79534;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto ;
+  }
+  .food-box{
+    width: 720rpx;
+    margin: 0 auto;  
+  }
+ 
+  
+  
+  
+  
+  

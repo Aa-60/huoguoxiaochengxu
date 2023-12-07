@@ -1,0 +1,61 @@
+{
+    "pages": [
+      
+        "pages/index/index",
+        "pages/list/list",
+        "pages/reser/reser",
+        "pages/phone/phone",
+        "pages/user/user",
+        "pages/sucai/sucai",
+        "pages/yinliao/yinliao",
+        "pages/swiper1/swiper1",
+        "pages/swiper2/swiper2",
+        "pages/swiper3/swiper3",
+        "pages/content/content"
+        
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "海底捞一捞",
+        "navigationBarTextStyle": "white"
+       
+    },
+    "style": "v2",
+   "sitemapLocation":"sitemap.json",
+   "lazyCodeLoading": "requiredComponents",
+   "tabBar": {
+    "color": "#000",
+    "selectedColor":"#FF0000",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"/images/icon/index.png",
+        "selectedIconPath":"/images/icon/首页.png"
+      },
+      {
+        "pagePath":"pages/phone/phone",
+        "text":"联系我们",
+        "iconPath":"/images/food/电话.png",
+        "selectedIconPath":"/images/food/电话(2).png" 
+      },
+      {
+        "pagePath":"pages/reser/reser",
+        "text":"订座",
+        "iconPath":"/images/icon/reser.png",
+        "selectedIconPath":"/images/icon/订座.png"        
+      },
+      {
+        "pagePath":"pages/user/user",
+        "text":"我的",
+        "iconPath":"/images/icon/我的.png",
+        "selectedIconPath":"/images/icon/我的 (1).png"        
+      }   
+    ]
+
+  }
+}

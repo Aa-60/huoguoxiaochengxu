@@ -1,0 +1,88 @@
+/* pages/user/user.wxss */
+.container {
+    width: 720rpx;
+    margin: 0 auto;
+}
+
+.userinfo {
+    margin-top: -150rpx;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.user-avatar {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.user-name {
+    font-size: 18px;
+    color: #000;
+    margin: 30px;
+}
+.user-sex {
+    font-size: 18px;
+    color: #000;
+    margin: 30px;
+}
+.tab{
+    height: 60rpx;
+    line-height: 60rpx;
+    border: 1px solid #000;
+    display: flex;
+    width: 100%;
+}
+.storage,.reser{
+    flex: 1;
+    text-align: center;
+  }
+  .storage-list{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .storage-item{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around ;
+      padding: 20rpx 0;
+      border-bottom: 1px solid #ccc;
+  }
+  .storagepic{
+      width: 170rpx;
+      height: 120rpx;
+      margin-right: 20rpx;
+  }
+  .storagename{
+    flex: 1;
+    height: 60rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    margin-right: 20rpx;
+  }
+  .storagedel{
+    width: 100rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    background-color: #07c160;
+    border-radius: 6px;
+    color: #fff;
+  }
+  .reser-list{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 20rpx 0;
+  }
+  .reser-item{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 30rpx 0;
+      border-bottom: 1px solid #ccc;
+  }

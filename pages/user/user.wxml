@@ -1,0 +1,43 @@
+<!--pages/user/user.wxml-->
+<view class="container" >
+    <view class="userinfo">
+    <button bindtap="getUserProfile" type="primary" wx:if="{{hasUserInfo}}">登录</button>
+    <block wx:else>
+        <view class="user-avatar">
+            <image style="width: 100%;height: 100%;" src="{{avatarUrl}}"></image>
+        </view>
+        <view class="user-name">
+            <text>昵称:{{nickName}}</text>
+        </view>
+    </block>
+    </view>
+    <view class="tab">
+    <view class="storage" style="{{isSto?'background-color: #d81e06;color:#fff;':'background-color:#fff;color:#d81e06'}}" bindtap="stoTap">已收藏</view>
+    <view class="reser"  style="{{isSto?'background-color:#fff ;color:#d81e06;':'background-color:#d81e06;color:#fff'}}" bindtap="reTap">查看订座</view>
+    </view>
+   <view class="storage-list"  wx:if="{{isSto}}"> 
+   <view class="storage-item" wx:for="{{stoList}}" wx:key="index">
+   <image src="{{item.pic}}" class="storagepic"></image>
+   <text class="storagename">{{item.title}}</text>
+   <view class="storagedel" bindtap="delSto" data-id="{{item.id}}" data-idx="{{index}}">删除</view>
+
+   </view>
+   </view>
+   <view class="reser-list" wx:else="{{isSto}}">
+   <view class="reser-item">
+   <text class="reser-date">订座时间</text>
+   <text class="go-date">到店时间</text>
+   <view class="table-num">桌号</view>
+   </view>
+   <view class="reser-item">
+   <text class="reser-date">2023/5/1</text>
+   <text class="go-date">2023/5/2</text>
+   <view class="table-num">119</view>
+   </view>
+   <view class="reser-item">
+   <text class="reser-date">订座时间</text>
+   <text class="go-date">到店时间</text>
+   <view class="table-num">桌号</view>
+   </view>
+</view>
+   </view>

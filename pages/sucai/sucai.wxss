@@ -1,0 +1,6 @@
+/* pages/sucai/sucai.wxss */
+@import "../template/template.wxss";
+.sucai-box{
+    width: 720rpx;
+    margin: 0 auto;  
+  }

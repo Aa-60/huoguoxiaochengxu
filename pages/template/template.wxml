@@ -1,0 +1,13 @@
+<template name="foodlist">
+    <view class="food-item" bindtap="foodtap" data-id="{{item.id}}">
+   <image src="{{item.pic}}"></image>
+   <view class="itme-r">
+       <text class="title">{{item.title}}</text>
+       <text class="small">{{item.smalltext}}</text>
+       <view class="price-box">
+       <text class="price">{{item.price}}</text>
+       <view class="btn" >详情</view>
+       </view>
+   </view>
+   </view>
+</template>

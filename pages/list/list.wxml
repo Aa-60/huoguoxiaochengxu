@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<!-- 引入模板结构文件 -->
+<import src="../template/template"></import>
+<view class="food-box" bindtap="foodtap">
+ <block wx:for="{{food}}" wx:key="index">
+ <template is="foodlist" data="{{item}}"></template>
+ </block>
+ </view>

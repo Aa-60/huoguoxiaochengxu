@@ -1,0 +1,25 @@
+/* pages/reser/reser.wxss */
+.reser{
+    display: flex;
+    flex-direction: column;
+    width: 720rpx;
+    line-height: 80rpx;
+    padding-left: 20rpx;
+}
+input{
+    border: 1px solid #000;
+    height: 80rpx;
+    padding-left: 10rpx;
+}
+radio-group{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+picker{
+    border: 1px solid #000;
+}
+button{
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+}

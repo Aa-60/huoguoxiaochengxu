@@ -1,0 +1,5 @@
+@import "../template/template.wxss";
+.food-box{
+    width: 720rpx;
+    margin: 0 auto;  
+  }

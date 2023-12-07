@@ -1,0 +1,29 @@
+<!--pages/index/index.wxml-->
+<import src="../template/template"></import>
+<view class="header" style="margin-top: {{menutop}}px;" style="background: url('/images/food/ditu.jpg') 0 0/100%  100%; ">
+  <view class="swiper-box" bindtap="swipertap">
+    <swiper indicator-dots="true" autoplay="{{false}}" interval="3000" duration="300">
+      <swiper-item wx:for="{{swiper}}" wx:key="index">
+        <image src="{{item.pic}}"  data-id="{{item.id}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<view class="navbox">
+<navigator  class="navitem" wx:for="{{navbox}}" wx:key="index" url="{{item.url}}" >
+    <image src="{{item.pic}}"></image>
+    <text>{{item.title}}</text>
+  </navigator>
+</view>
+<view class="food-text">
+  <text>锅底推荐</text>
+</view>
+
+<view class="food-box">
+   <block wx:for="{{food}}" wx:key="index" >
+   <template is="foodlist" data="{{item}}"></template>
+   </block>
+</view>
+
+  
+ 

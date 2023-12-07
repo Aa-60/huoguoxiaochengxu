@@ -1,0 +1,7 @@
+<!--pages/sucai/sucai.wxml-->
+<import src="../template/template"></import>
+<view class="sucai-box" bindtap="foodtap">
+ <block wx:for="{{sucaibox}}" wx:key="index">
+ <template is="foodlist" data="{{item}}"></template>
+ </block>
+ </view>

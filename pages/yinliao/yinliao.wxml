@@ -1,0 +1,7 @@
+<import src="../template/template"></import>
+<view class="food-box" bindtap="foodtap">
+ <block wx:for="{{food}}" wx:key="index">
+ <template is="foodlist" data="{{item}}"></template>
+ </block>
+ </view>
+

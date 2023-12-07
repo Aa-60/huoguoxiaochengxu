@@ -1,0 +1,25 @@
+<!--pages/reser/reser.wxml-->
+<view class="reser">
+<form bindsubmit="formSubmit" bindreset="formReset">
+<text>手机号(仅支持中国大陆)*:</text>
+<input name="phone" type="number" maxlength="11" placeholder="手机号"/>
+<text>姓氏(输入姓即可)*:</text>
+<input placeholder="输入姓氏" name="uname" />
+<text>称谓*:</text>
+<radio-group name="sex">
+    <radio value="man" checked="">先生</radio>
+    <radio value="woman" checked="">女士</radio>
+</radio-group>
+<text>选择到店时间(仅支持提前五天)*</text>
+<picker mode="date" start="2023-4-1" end="2023-5-1">
+   <view style="height: 80rpx;"></view> </picker>
+<text>午餐/晚餐*</text>
+<radio-group name="noon">
+    <radio value="man" checked="">午餐</radio>
+    <radio value="woman" checked="">晚餐</radio>
+</radio-group>
+<button type="default"  size="default" form-type="reset" type="warn">重置</button>
+<button type="primary" form-type="submit">提交</button>
+</form>
+</view>
+
